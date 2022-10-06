@@ -3,8 +3,15 @@ import { StyleSheet, View, Text } from "react-native";
 import { map, capitalize } from "lodash";
 import getColorByPokemonType from "../../utils/getColorByPokemonType";
 
+import getNameType from "../../utils/getTypeEspanol";
+
 export default function Type(props) {
   const { types } = props;
+
+  function NombreTypoEspanol(type_name) {
+    const nombre = getNameType(type_name);
+    return nombre;
+  }
 
   return (
     <View style={styles.content}>
@@ -16,7 +23,7 @@ export default function Type(props) {
             backgroundColor: getColorByPokemonType(item.type.name),
           }}
         >
-          <Text style={styles.textname}>{capitalize(item.type.name)}</Text>
+          <Text style={styles.textname}>{capitalize(NombreTypoEspanol(item.type.name))}</Text>
         </View>
       ))}
     </View>

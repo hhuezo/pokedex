@@ -30,3 +30,28 @@ export const POKEMON_TYPE_COLORS = {
     ["special-defense"]: "defensa especial",
     speed: "velocidad"
   };
+
+
+  
+  export const TYPE_NOMBRE = {
+    normal: "normal",
+    fighting: "lucha",
+    flying: "volador",
+    poison: "veneno",
+    ground: "tierra",
+    rock: "roca",
+    bug: "insecto",
+    ghost: "fantasma",
+    steel: "acero",
+    fire: "fuego",
+    water: "agua",
+    grass: "césped",
+    electric: "eléctrico",
+    psychic: "psíquico",
+    ice: "hielo",
+    dragon: "dragón",
+    dark: "oscuridad",
+    fairy: "hada",
+    unknown: "desconocido",
+    shadow: "sombra"
+  };

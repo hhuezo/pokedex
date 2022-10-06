@@ -15,15 +15,11 @@ export default function Stats(props) {
     };
   };
 
-  function NombreStatEspanol(stat) {
-    const nombre = getNameStat(stat);
+  function NombreStatEspanol(stat_name) {
+    const nombre = getNameStat(stat_name);
     return nombre;
   }
 
-  //const pokemonColor = getColorByPokemonType(pokemon.type);
-
-
-  //<Text style={styles.statName}>{capitalize(item.stat.name)}</Text>
 
   return (
     <View style={styles.content}>
