@@ -20,3 +20,13 @@ export const POKEMON_TYPE_COLORS = {
     dark: "#705848",
     fairy: "#EE99AC",
   };
+
+
+  export const STAT_NOMBRE = {
+    hp: "hp",
+    attack: "ataque",
+    defense: "defensa",
+    ["special-attack"]: "ataque especial",
+    ["special-defense"]: "defensa especial",
+    speed: "velocidad"
+  };
